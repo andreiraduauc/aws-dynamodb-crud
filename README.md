@@ -40,14 +40,11 @@ git clone https://github.com/andreiraduauc/aws-dynamodb-crud.git
 cd aws-dynamodb-crud
 
 To install dependencies run: npm i
-```sh
-
 
 ### Local Playground
 
 From the root of the project:
 
-```sh
 # Create a .env based on the .env.example file
 cp ./docker/.env.example ./docker/.env
 
@@ -55,4 +52,6 @@ cp ./docker/.env.example ./docker/.env
 
 # Run 
 npm run start:dev
-```sh
+```
+
+### That's all
