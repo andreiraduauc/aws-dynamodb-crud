@@ -91,6 +91,12 @@ export class ProductsController {
   @Delete('/:id')
   async deleteProductById(@Param() id: string): Promise<void> {
     try {
+      if (!id) {
+        throw new BadRequestException(
+          'Invalid request. Expected request paramter: id',
+        );
+      }
+
       await this.productsService.deleteProductById(id);
     } catch (error) {
       if (error instanceof Error) {

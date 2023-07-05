@@ -50,8 +50,38 @@ cp ./docker/.env.example ./docker/.env
 
 # Complete the .env with your credentials
 
-# Run 
+# Bootstrap 
 npm run start:dev
 ```
 
-### That's all
+## Available routes 
+
+```sh
+   # GET /api/products
+   # Returns all products
+
+   # GET /api/products/:id
+   # Returns products information based on the product id
+     - Request parameter: 
+       - id : string
+
+   # POST /api/products
+   # Create a new product
+
+     - Body:
+        - currentStock : number
+        - inStock: boolean
+        - name: string
+  
+   # PATCH /api/products
+   # Update an existing product based on the product id
+
+    - Body:
+        - id: string
+        - currentStock: number
+
+   # DELETE /api/products/:id
+   # Delete a product based on the product id
+     - Request parameter: 
+       - id : string
+```
