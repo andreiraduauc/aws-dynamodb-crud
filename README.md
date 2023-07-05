@@ -45,8 +45,8 @@ To install dependencies run: npm i
 
 From the root of the project:
 
-# Create a .env based on the .env.example file
-cp ./docker/.env.example ./docker/.env
+# From the root, create a .env based on the .env.example file
+cp ./.env.example ./.env
 
 # Complete the .env with your credentials
 
